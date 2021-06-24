@@ -42,7 +42,8 @@ const style_list = StyleSheet.create({
   },
 });
 
-const SectionListBasics = ({navigation}) => {
+const SectionListBasics = ({navigation, route}) => {
+  const { name, text} = route.params;
   return (
     <View style={style_list.container}>
       <View>
@@ -53,6 +54,8 @@ const SectionListBasics = ({navigation}) => {
             {
               title: 'J',
               data: [
+                name,
+                text,
                 'Jackson',
                 'James',
                 'Jillian',
@@ -102,8 +105,8 @@ const FlatListBasics = () => {
   );
 };
 
-const App = ({navigation}) => {
-  return <SectionListBasics navigation={navigation} />;
+const App = ({navigation, route}) => {
+  return <SectionListBasics navigation={navigation} route={route} />;
 };
 
 export default App;

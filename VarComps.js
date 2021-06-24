@@ -126,7 +126,11 @@ const App = ({navigation}) => {
         <Button
           title="Go to Next"
           onPress={() => {
-            navigation.navigate('list');
+            // navigation.navigate('list');
+            navigation.navigate('list',{
+              name:'React cat',
+              text:'I am a native'
+            });
           }}
         />
 
