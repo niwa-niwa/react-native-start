@@ -27,6 +27,4 @@ const App = () => {
 };
 export default App;
 
-// TODO: implement Tabs screen https://reactnavigation.org/docs/tab-based-navigation
 // Todo: implement Drawer screen https://reactnavigation.org/docs/drawer-based-navigation
-// Todo: authentication flow https://reactnavigation.org/docs/auth-flow
