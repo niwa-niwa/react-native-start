@@ -9,6 +9,10 @@ const Single1 = ({navigation}) => {
         title="Go to Single2"
         onPress={() => navigation.navigate('Single2')}
       />
+      <Button
+        title="Open drawer"
+        onPress={() => navigation.openDrawer()}
+      />
     </View>
   );
 };
