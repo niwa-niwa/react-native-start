@@ -13,6 +13,8 @@ import Tab1 from './screens/Tab1';
 import Tab2 from './screens/Tab2';
 import {DrawerContent} from './screens/DrawerContent';
 
+
+
 const Tab = createBottomTabNavigator();
 const TabsScreen = () => {
   return (
@@ -37,5 +39,3 @@ const App = () => {
   );
 };
 export default App;
-
-// Todo: implement Drawer screen https://reactnavigation.org/docs/drawer-based-navigation
